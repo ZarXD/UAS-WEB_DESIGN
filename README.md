@@ -5,7 +5,7 @@ Jurusan **Application Software Engineering**
 
 ## Teknologi
 > HTML5
-> JavasScript
+> JavaScript
 > TailwindCSS
 ## Struktur
 ```
