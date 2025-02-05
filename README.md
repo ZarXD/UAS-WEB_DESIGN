@@ -4,9 +4,9 @@ Dibuat oleh **Fahad Vidjar Apriza**
 Jurusan **Application Software Engineering**
 
 ## Teknologi
-> HTML5
-> JavaScript
-> TailwindCSS
+- HTML5
+- JavaScript
+- TailwindCSS
 ## Struktur
 ```
 .
