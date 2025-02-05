@@ -30,3 +30,8 @@ Jurusan **Application Software Engineering**
 3. Ketik `Alt+L` lalu `Alt+O` untuk memulai Live Server.
 4. Halaman websitenya akan muncul.
 
+## TODO
+- [ ] Migrasi ke React/Vite
+- [ ] Tema Light/Dark
+- [ ] Halaman Chat
+
