@@ -28,7 +28,7 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <a href="/" class="flex items-center">
-                    <span class="font-anton text-white text-2xl font-bold">RyuSekai</span>
+                    <span class="font-anton text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">RyuSekai</span>
                     <lord-icon
                             src="https://cdn.lordicon.com/shtxmkrt.json"
                             trigger="loop"
@@ -44,8 +44,9 @@
                     <a href="/" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
                     <a href="/ryusekai-anime.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">List Anime</a>
                     <a href="/ryusekai-manga.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">List Manga</a>
+                    <a href="/ryusekai-about.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tentang</a>
                 </div>
-
+                
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
                     <button id="mobileMenuButton" class="text-gray-300 hover:text-white focus:outline-none">
@@ -63,6 +64,7 @@
                 <a href="/" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
                 <a href="/ryusekai-anime.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">List Anime</a>
                 <a href="/ryusekai-manga.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">List Manga</a>
+                <a href="/ryusekai-about.html" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tentang</a>
             </div>
         </div>
     </nav>
@@ -148,6 +150,7 @@
                         <li><a href="/" class="text-gray-400 hover:text-white text-sm">Beranda</a></li>
                         <li><a href="/ryusekai-anime.html" class="text-gray-400 hover:text-white text-sm">List Anime</a></li>
                         <li><a href="/ryusekai-manga.html" class="text-gray-400 hover:text-white text-sm">List Manga</a></li>
+                        <li><a href="/ryusekai-about.html" class="text-gray-400 hover:text-white text-sm">Tentang</a></li>
                     </ul>
                 </div>
                 
@@ -176,7 +179,7 @@
     </footer>
 </body>
 <script>
-    // Konfigurasi Aplikasi
+    // Konfigurasi
     let currentPage = 2;
     let totalPages = 100;
     let searchQuery = '';
@@ -188,7 +191,8 @@
     const nextPageButton = document.getElementById('nextPage');
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
-    // Mobile Menu
+
+        // Mobile Menu
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             document.body.classList.toggle('overflow-hidden');
@@ -375,7 +379,7 @@
                             </p>
                             <div class="flex justify-between items-center">
                                 <span class="text-blue-400 text-sm">
-                                    Chapter: ${manga.attributes.chapterCount || 'N/A'}
+                                    Ch: ${manga.attributes.chapterCount || 'N/A'}
                                 </span>
                                 <span class="text-yellow-400 text-sm">
                                     ⭐ ${manga.attributes.averageRating || '0'}
